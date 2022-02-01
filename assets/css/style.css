@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/* 1. General style of the document */
+
+body {
+  background-color: #0663af;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #f0ebeb;
+  margin: auto;
+}
+
+/* 2. Navigation on top of the document */
+.topbar {
+  background-color: black; 
+  overflow: hidden;
+  position: fixed;
+  top:0;
+  width: 100%;
+  
+}
+
+.menu{
+  list-style-type: none;
+  display: inline;
+}
+
+.referenceMenu a {
+  float:left;
+  display:block;
+  color: rgb(201, 11, 11);
+  text-align:center;
+  padding: 20px 60px ;
+  text-decoration: none;
+  position: relative;
+}
+
+.referenceMenu a:hover {
+  background-color: rgb(149, 184, 22);
+  color: black;
+  
+}
+
+/* 3.  */
+.homeDocument,
+.profileDocument,
+.projectDocument,
+.skillsDocument,
+.hobbyDocument,
+.futureDocument {
+  
+  margin: auto;
+  max-width: 800px;
+  width: 100%;  
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+h2{
+  padding: 20px;
+}
+
+p{
+  padding: 10px;
+}
+
+p a{
+  color: rgb(21, 8, 78);
+}
+
+/* footer */
+.contactDocument{
+  background-color: white; 
+  overflow: hidden;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  
+}
+
+.contactReference{
+  color:rgb(1, 22, 16);
+  float:left;  
+  padding:10px 60px ;
+}
+
