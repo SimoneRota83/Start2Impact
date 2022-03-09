@@ -5,54 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Simone Web Page</title>
         <link href="assets/css/style.css" rel="stylesheet"/>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     </head>
     
 
     <body> 
         <!-- Top navigation bar -->  
-        <header>       
-            <div class='topbar'>                
-                <ul class='menu'>
-                    <li class="referenceMenu">
-                        <a href="#home">Home</a>
-                    </li>                
-                    <li class="referenceMenu">
-                        <a href="#profile">Chi sono</a>
-                    </li>                               
-                    <li class="referenceMenu">
-                        <a href="#project">Trasferte</a>
-                    </li>       
-
-                    <li class="referenceMenu">
-                        <a href="#skills">Competenze</a>
-                    </li>
-                    <li class="referenceMenu">
-                        <a href="#hobby">Passioni</a>
-                    </li>                
-                    <li class="referenceMenu">
-                        <a href="#future">Progetti futuri</a>
-                    </li>
-                                    
-
-                                                
-
-                </ul>
-            </div>
+        <header> 
+            <div class="topbar" id="myTopBar">            
+                <a href="#home" class="active">Home</a>
+                <a href="#profile">Chi sono</a>                                                     
+                <a href="#project">Trasferte</a>
+                <a href="#skills">Competenze</a>
+                <a href="#hobby">Passioni</a>
+                <a href="#future">Progetti futuri</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>                                  
+            </div>     
+                
         </header>
         
         <!-- Introduction -->
         <section id="home">
             <div class="homeDocument">                
-                    <h1> Simone Rota</h1>
+                    <h1 class="middle"> Simone Rota</h1></br>
+                    <img class="middle" src="assets/img/IMG_2998 (2).JPG" width='200' />
+                    
                     <br />
                     <h2> Ingegnere dell'automazione industriale </h2>
                     <h2>Esperto di avviamenti di impianti oleodinamici</h2>
                     <h2>Sviluppatore di progetti in Excel nell'ambiente VBA.</h2>
                     <br />
                     <p>Classe 83. Spinto dalla passione nella programmazione ho deciso di trasformarlo nella mia prossima
-                        professione.</p>
-                
+                        professione.</p>                
             </div>
         </section>
         <br/>       
@@ -87,267 +73,17 @@
             </div> 
          </section>
          
-        <!-- around the world --> 
+        <!-- around the world -->
         <section id="project">
-            <div class="projectDocument">
-                <h2>
-                    Prima trasferta 2010
-                </h2>   
-                <p>
-                    Il progetto riguardava il revamping di una rampa da cui venivano varati i tubi depositati sul fondo del mare. </br>
-                    Il nostro scopo di fornitura era relativo a bilancini che avrebbero guidato il tubo durante la posa in mare.
-                </p> 
-                <P>
-                    Ricordo ancora il freddo e il vento dell'Olanda, quando faceva "caldo" nevicava. </br>
-                    Mi era stato chiesto di partire per tre giorni, giusto per farmi un'idea del lavoro. Il terzo giorno i miei responsabili, mi hanno
-                    chiesto se potevo rimanere ancora qualche giorno per seguire i lavori... Morale della favola i giorni sono diventati 30 di fila.
-                </P>
-                <p>
-                    Da quel momento in poi per i successivi 12 anni ho passato gran parte del mio tempo all'estero.
-                </p>
+            
+                <div class="middle"><h1> Trasferte</h1></br> </div>            
+                <a href="/portfolio/trasferte.html"><img class="middle" src="/assets/img/mondo.png" > </a>            
+            
+        </section> 
 
-                <h2> Maggio 2011</h2>
-                <p>
-                    Dopo aver concluso il primo progetto di varo di svariati km di linea, la nave posatubi si è fermata per manutenzione.</br>
-                    Sono tornato a bordo per ritestare il funzionamento dell'impianto fornito, più altre attività di collaudo di nuovi equipment che ci erano
-                    stati commissionati. La trasferta è durata 35 giorni con turni molto pesanti, poichè si lavora 7 su 7 e minimo 12 ore al giorno.
-                </p>
-
-                <h2> Novembre 2011</h2>
-                <p>
-                    Partenza per la Norvegia.
-                </p>
-                <p>
-                    Scopo della fornitura un'HPU che doveva alimentare l'anello oleodinamico principale dello Scarabeo 8. Era la prima volta che veniva realizzata
-                    un'HPU con 9 gruppi motopompa. L'avviamento tutto sommato non ha creato problemi anche se qualche bagno d'olio non è mancato.
-                </p>
-
-                <h2>Febbraio 2012. Ottobre 2012.</h2>
-                <P>
-                    Si torna in Norvegia
-                </P>
-                <img src="assets/img/Febbraio2011.jpg" width='500'/>
-                <p>
-                    Scopo di fornitura un gruppo di 3 argani compensati che devono portare sul fondo un manifold ausiliario da utilizzare in abbinata con il BOP.
-                </p>
-                <p>
-                    A differenza dell'HPU, questa macchina ha richiesto molto più lavoro del previsto perchè la logica di funzionamento è stata rivista a bordo a fronte 
-                    delle richieste del cliente. Il clima estremamente rigido non ha sicuramente aiutato; poichè mi trovavo a <a href="https://www.google.com/maps/place/Westcon+Yards+AS/@59.6051828,5.7651862,15.5z/data=!4m5!3m4!1s0x0:0xe23e311ec69c2b2d!8m2!3d59.606242!4d5.765998" >Olensvag</a> un posto isolato completamente dalla
-                    civiltà.
-                </p>
-
-                <h2>Dicembre 2012</h2>
-                <p>Destinazione Indonesia... passando da Singapore</p>
-                    <img src="assets/img/Dicembre2012.jpg" width='500'/>
-                <p>
-                    L'obiettivo era l'avviamento di 6 argani per tiri a terra.
-                </p>
-
-                <h2>Ottobre 2014</h2>
-                <p>L'obiettivo era commissionare il sistema di ormeggio dell'FPSO</p>
-                <img src="assets/img/Ottobre2014_1.jpg" width='500'/>
-                <p>La trasferta è durata quasi 2 mesi nei quali sono state testate tutte le basi su cui il chain jack si sarebbe fissato e da cui avrebbe iniziato,
-                    l'operazione di tensionamento della catena.
-                </p>
-
-                <h2>Giugno 2015</h2>
-                <p>
-                    Lancio Jacket
-                </p>
-                <img src="assets/img/Giugno2015.jpg" width='500'/>
-                <p>Era la prima volta che venivo coinvolto nel cosiddetto lancio del Jacket, operazione in cui un traliccio di circa 120 m, viene rilasciato in mare.
-                    Questo traliccio diventa poi la base per una stazione di estrazione. </br>
-                    Lo scopo di fornitura era un sistema che spingesse questo traliccio prograssivamente verso il mare partendo da una bettolina. </br>
-                    Ecco il link al <a href="https://www.youtube.com/watch?v=TcJsX-D6Z0c&ab_channel=ShantyDiaz">video</a> che è stato caricato su Youtube!
-                </p>
-
-                <h2>Novembre 2015</h2>
-                <img src="assets/img/Novembre2015.jpg" width='500'/>
-                <p>
-                    Finalmente ho avuto l'occasione di poter visitare quest'incredibile Stato: <a href='https://www.google.com/maps/place/Singapore/@1.3143394,103.7038244,11z/data=!3m1!4b1!4m5!3m4!1s0x31da11238a8b9375:0x887869cf52abf5c4!8m2!3d1.352083!4d103.819836'>Singapore</a> . L'archietettura del paesaggio ti toglie veramente il fiato. </br>
-                    Obiettivo della fornitura, un'HPU per il comando di valvole sott'acqua tramite pressurizzazione dei comandi.
-                </p>
-
-                <h2>Gennaio 2017</h2>
-                <img src="assets/img/Gennaio2017.jpg" width='500'/>
-                <p>
-                    Ritorno a Singapore per commissionare:
-                    <ul>
-                        <li>
-                            un sistema di ormeggio catena composto da un Chain Jack
-                        </li>
-                        <li>
-                            un sistema di recupero Riser composto da un Linear Winch
-                        </li>
-                        <li>
-                            tutto il gruppo sopra alimentato da un'HPU composta da 4 gruppi motopompa, con 3 pompe in tandem.
-                        </li>
-                        <li>
-                            un'HPU per il comando di valvole subacque.
-                        </li>
-                        <li>
-                            un sistema di bloccaggio della torre.
-                        </li>
-                        <li>
-                            un serbatoio di raccorta di liquidi di scarto.
-                        </li>
-                        <li>
-                            un pannello di il monitoraggio della portata dei fluidi.
-                        </li>
-                    </ul> 
-                    </br>
-                    Questa trasferta è durata quasi 70 giorni poichè le attività erano moltissime e soprattutto i test di sollevamento sono stati interessanti.</br>
-                    Per collaudare la capacità di carico di 600 ton per il linear winch è stata sollevata dall'acqua una barge.
-                </p>
-
-                <h2> Maggio 2017</h2>
-                <p>Mooring Pionero de Libra</p>
-                <p>
-                    Ecco che l'attività di test fatta in cantiere qualche mese prima, mi porta poi ad ormeggiare la nave. </br>
-                    Per l'ormeggio sono state tensionate 9 catene arrivanto da un tiro di 160 ton.
-                </p>
-
-                <h2>Luglio 2017</h2>
-                <p>Prelude</p>
-                <img src="assets/img/Luglio2017.jpg" width='500'/>
-                <p>
-                    Finisce un ormeggio ed ecco che ne parte subito un altro.
-                    Questa era la prima volta che andavo in Austrilia e ho avuto anche qualche giorno per visitare <a href='https://www.google.com/maps/place/Perth+Australia+Occidentale,+Australia/@-32.0397559,115.6813467,10z/data=!3m1!4b1!4m5!3m4!1s0x2a32966cdb47733d:0x304f0b535df55d0!8m2!3d-31.9523123!4d115.861309'>Perth</a>.
-                    La trasferta ha richiesto 75 giorni poichè il maltempo non è stato dalla nostra parte. </br>
-                    Alla fine sono apparso in un video che documentava le fasi dell'ormeggio.
-                    Ecco il link al <a href="https://www.youtube.com/watch?v=FDlldnlRVU4&ab_channel=Shell">video</a>.
-                </p>
-
-                <h2> Dicembre 2017</h2>
-                <p> Riser Pionero de Libra</p>
-                <img src="assets/img/Dicembre2017.jpg" width='500'/>
-                <p>
-                    Dopo la prima fasi ormeggio tensionando le catene è stato il momento di collegare i Riser alla nave.
-                </p>
-
-                <h2>Maggio 2018</h2>
-                <p>Tanajib</p>
-                <img src="assets/img/Maggio2018.jpg" width='500'/>
-                <p>
-                    Era la prima volta che andavo nel deserto e non avevo mai provato cosa fossero 51°C all'ombra, semplicemente evaporavo! </br>
-                    Scopo del lavoro era recuperare un tubo che veniva varato da una piattaforma poco a largo. La prima fare è andata bene usando la macchina, con
-                    il ciclo automatico. La seconda parte, quando il tiro aumentava, ha visto l'impiego di una fune da 4", peccato fosse fuori tolleranza e quindi
-                    ho dovuto operare completamente in manuale, 800 metri di linea.
-                </p>
-
-                <h2>Maggio 2018</h2>
-                <p><a href="https://www.google.com/maps?q=saint+crepin&sxsrf=APq-WBumHHaVTpQWsorxjo-MlGJH8Ph9ZA:1643575762255&gs_lcp=Cgdnd3Mtd2l6EAEYADIFCC4QgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB5KBAhBGABKBAhGGABQAFgAYOYQaABwAngAgAGOAYgBjgGSAQMwLjGYAQCgAQKgAQHAAQE&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiIztDqrtr1AhW7Q_EDHV36BqIQ_AUoAXoECBUQAw" >Saint Crepin</a></p>
-                <img src="assets/img/Maggio2018_Francia.jpg" width='500'/>
-                <p>
-                    Questa trasferta è stata più particolare delle altre, poichè dovevo fare da spettatore e non potevo operare direttamente sulla macchia. </br>
-                    Scopo della fornitura era una macchina che facesse da freno mentre venivano stese le messaggere che poi sarebbero state sostituite da linee
-                    dell'alta tensione.
-                </p>
-
-                <h2>Giugno 2018</h2>
-                <P>Brunei</P>
-                <img src="assets/img/Giugno2018.jpg" width='500'/>
-                <p>
-                    In questa trasferta dovevo dare assistenza ad una macchina che non era stata realizzata da noi. Si trattata di tensionatori idraulici, il sistema
-                    aveva 30 anni e mi dicevano che non sono mai riusciti a sfruttare il massimo del potenziale del sistema. E' incredibile, ma il problema è che 4 tubetti
-                    di pilotaggio erano invertiti e quindi 2 dei 5 gruppi motopompa non entravano in funzione, vi lascio immaginare le facce dei tecnici che non avevano
-                    mai fatto caso a questo errore di connessione.
-                </p>
-
-                <h2>Agosto 2018</h2>
-                <p>Russia</p>
-                <img src="assets/img/Agosto2018.jpg" width='500'/>
-                <p>
-                    Era la prima volta che visitavo la Russia.</br>
-                    Scopo di fornitura un argano con un cilindro in uscita con funzione di smorzatore quando il carico superava le 120 ton. Trasferta che si è rivelata
-                    più semplice del previsto.
-                </p>
-
-                <h2>Settembre 2018</h2>
-                <P>Brasile</P>
-                <img src="assets/img/Dicembre2018.jpg" width='700'/>
-                <p>
-                    Ebbene si sono tornato nuovamente sul Pionero de Libra per concludere la connessione degli ultrimi 3 riser e per qualche anno sarei rimasto lontano
-                    da questa FPSO che ha lo scopo di testare il fondale e poi spostarsi per collaudare altri pozzi petroliferi.
-                </p>
-
-                <h2>Marzo 2019</h2>
-                <p>Cina - <a href="https://www.google.com/maps/place/Shenzhen,+Guangdong,+Cina/@22.5549176,113.7736861,10z/data=!3m1!4b1!4m5!3m4!1s0x3403f408d0e15291:0xfdee550db79280c9!8m2!3d22.5428599!4d114.05956">Shenzhen</a></p>
-                <img src="assets/img/Marzo2019.jpg" width='500'/>
-                <img src="assets/img/Marzo2019_2.jpg" width='500'/>
-                <p>
-                    Eccomi entrare in uno stato per me nuovo, la Cina. Pensavo che il cibo fosse come quello dei ristoranti delle nostre zone e invece, non si
-                    avvicina nemmeno lontanamente! </br>
-                    Scopo della fornitura:
-                    <ul>
-                        <li>
-                            Argano doppio cabestano 300 ton, con Storage winch da 20 ton.
-                        </li>
-                        <li>
-                            Clampa con la possibilità di bloccare un carico di 600 ton.
-                        </li>
-                        <li>
-                            Plet (nell'immagine) per l'installazione di valvole subacque.
-                        </li>
-                    </ul>
-                    </br>
-                    Questa trasferta ha richiesto quasi 2 mesi a causa dei tempi per l'installazione e il commissioning delle varie macchine.
-                </p>
-
-                <h2>Aprile 2019</h2>
-                <p>Cina</p>
-                <img src="assets/img/Aprile2019.jpg" width='500'/>
-                <p>
-                    Scopo della fornitura un Aframe, il più alto mai realizzato: 25 metri. </br>
-                    Il collaudo è stato più lungo del previsto poichè mi sono trovato di fronte a non pochi problemi, ma l'esperienza ne è valsa la pena.
-                    Tutto il 2019 è stato pieno di viaggio in Cina per assistenza al Cliente durante le operazioni in mezzo al mare. </br>
-                    <img src="assets/img/Dicembre2019_Shangai.jpg" width='500'/>
-                </p>
-
-              
-                <h2>Settembre 2020</h2>
-                <p>Olanda</p>
-                <img src="assets/img/Settembre2020.jpg" width='500'/>
-                <p>
-                    Ecco che mi dirigo per andare a bordo del Pioneering Spirit, la nave di costruzione più grande del mondo! </br>
-                    Scopo di fornitura:
-                    <ul>
-                        <li>
-                            12 argani doppio cabestano.
-                        </li>
-                        <li>
-                            8 argani monotamburo.
-                        </li>
-                        <li>
-                            8 argani ausiliari.
-                        </li>
-                        <li>
-                            svariate pulegge motorizzate.
-                        </li>
-                        <li>
-                            2 driven block sheave.
-                        </li>
-                    </ul>
-                    </br>
-                    Tutta questa fornitura per fare da supporto a 2 colonne che hanno l'obiettivo di recuperare Jacket dismessi e poterne fare un revamping.
-                    </br>
-                    E' stata la prima volta che un cliente mi mettesse in difficoltà con le domande che poneva, mi hanno impressionato per la preparazione tecnica
-                    del personale a bordo. L'approccio sistematico ai test mi ha lasciato veramente a bocca aperta, poichè erano quasi più interessati alle registrazioni
-                    numeriche durante i test che all'effettivo funzionamento dell'equipment.
-                </p>
-
-                <h2>Luglio 2021</h2>
-                <p>Brasile</p>
-                <p>
-                    Eccomi tornare a bordo del Pionero del Libra con l'obiettivo di disormeggiare la nave, disconnettere i riser, spostarsi di 10km e rifare tutto dall'inzio. </br>
-                    Sono stato in mezzo al mare per ben 81 giorni!!! Sfido chiunque a ripetere l'impresa.
-                </p>
-            </div>
-        </section>
-        
         <section id="skills">
             <div class="skillsDocument">
-                <h1>
+                <h1 class="middle">
                     Competenze
                 </h1>
                 <p>
@@ -367,78 +103,14 @@
         </section>
 
         <section id="hobby">
-            <div class="hobbyDocument">
-                <h1>
-                    Passioni
-                </h1>
-                <h2>
-                    Scacchi
-                </h2>
-                <p>
-                    Ho iniziato ad avvicinarmi a questo mondo all'età di 13 anni, poichè si parlava di questo gioco come di qualcosa impossibile da imparare! </br>
-                    Ebbene posso assicurare che muovere i pezzi e capire le regole base è decisamente semplice, la parte tremendamente difficile è Sviluppatore
-                    le capacità che ti permettono di avanzare di livello. 
-                </p>
-                <p>
-                    Il primo anno che ho iniziato a fare tornei, ho subito vinto il campionato bergamasco U16, ricordo ancora che ero strabiliato poichè avevo
-                    superato giocatori che da anni giocavano, mentre io ero proprio l'ultimo arrivato.
-                </p>
-                <img src="assets/img/scacchi_U16.jpg"/>
-                <p>
-                    A livello U16 ho vinto svariati tornei, tra cui il granpremio Lombardo e sono stato anche capocannoniere nel torneo a squadre giovanile con 35,5 punti 
-                    realizzati du 36.
-                </p>
-                <p>
-                    Il miglior risultato è stato vincere nel 2010 il campionato assoluto bergamasco.
-                </p>
-                <img src="assets/img/Campionato_Bergamasco2010.jpg"/>
-                <p>
-                    Mentre l'anno successivo sono arrivato secondo al campionato assoluto lombardo.</br>
-                    Ho partecipato a 3 semifinali del campionato italiano, ma quando giochi con chi è veramente capace vieni letteralmente distrutto.
-                </p>
-                <p>
-                    Con le frequenti trasferte ho messo da parte questo gioco che mi affascina sempre.</br>
-                    Ora gioco tanto <a href="https://lichess.org/@/SR83">ONLINE</a>, ma conto a breve ti tornare a partecipare da agonista.
-                </p>
-                <h2>
-                    Lettura
-                </h2>
-                <p>
-                    Finchè non ho iniziato l'università, la lettura non mi ha mai attirato. Poi qualcosa è cambiato e da quel momento ho sempre letto circa 100 libri all'anno.</br>
-                    La lettura mi ha sempre accompagnato durante le mie trasferte e i lunghi viaggi in aereo.</br>
-                    All'inizio leggevo romanzi, ma con gli anni mi sono spostato sui saggi poichè voglio imparare qualcosa che mi può essere utile da ciò che leggo.</br>
-                </p>
-                <h2>
-                    Crescita personale
-                </h2>
-                <p>
-                    Anche qui c'è lo zampino dell'Università, poichè all'inizio ho avuto tantissime difficoltà, dovute principalmente al fatto di non avere un metodo di studio.</br>
-                    La domanda che mi ossessionava era: come fanno gli altri a passare gli esami facendo decisamente meno sforzo di me?
-                </p>
-                <p>
-                    Cercando in internet mi sono imbattutto in un sito di strategie dei geni che ora non esiste più. In questo sito si parlava di lettura veloce, di PNL, di mnemotecniche
-                    e di photoreading.</br>
-                </p>
-                <p>
-                    Ho comprato i primi libri su questi argomenti ed è stato un amore che non è mai finito.</br>
-                    La PNL mi ha aiutato negli anni a creare un Mindset rivolto a trovare soluzioni, piuttosto che a lamentarsi, poichè restare sul problema per me è solo una gran perdita
-                    di tempo e di energia.</br>
-                    Per anni mi sono limitato a leggere ed applicare le varie tecniche, finchè nel 2020 non mi sono deciso a frequentare i corsi: Practitioner, Master Practitioner e 
-                    Licensed Advanced Hypnotic Practitioner.</br>
-                    Devo ammettere che effettivamente un corso ben strutturato mi ha permesso di fare un notevole salto di qualità.
-                </p>
-                <img src="assets/img/Practitioner.JPG" width='500'/>
-                <img src="assets/img/MasterPractitioner.JPG" width='500' />
-                <p>
-                    Non contento nel 23 giugno 2020 ho conseguito il Master di 1° livello in "Coaching".
-                </p>        
-                <img src="assets/img/coaching.JPG" width='700'/>        
-            </div>
+            <div class="middle"><h1>Passioni</h1></br></div>
+            <a href="/portfolio/passioni.html"><img class="middle" src="/assets/img/scacchiera.png" ></a>
+
         </section>
 
         <section id="future">
             <div class="futureDocument">
-                <h1>
+                <h1 class="middle">
                     Progetti futuri
                 </h1>
                 <h2>
@@ -466,7 +138,7 @@
                     Al giorno d'oggi l'insegnamento degli scacchi è basato sul vincere, quello che si vuole proporre in questo caso invece è la possibilità di utilizzare
                     gli scacchi come strumento di crescita.
                 </p>
-                <p>
+                <p class="endDocument">
                     Invece come progetto personale, collegare la scacchiera con il motore di scacchi e autonomamente creare l'albero delle varianti.</br>
                     L'obiettivo è quello di avere piani pronti riducendo il mio tempo di analisi, poichè spesso mi perdo in analisi che sembrano buone per poi essere distrutte
                     dal computer. Questo approccio potrebbe portare ad una miglior comprensione di quali sono i punti su cui far leva nella posizione per ottenere vantaggio.
@@ -483,25 +155,36 @@
                     <li class='contactReference'>tel: 348 5706856</li>
                     <li class='contactReference'>
                         email: 
-                        <a href='mailto:cimidada@teletu.it'>cimidada@teletu.it</a>
+                        <a href='mailto:cimidada@teletu.it'>cimidada@gmail.com</a>
                     </li>
                     <li class='contactReference'>
                         <a href='https://www.facebook.com/simone.rota.14/'>
-                            <img src='assets/img/facebook.png' width="80"/>
+                            <img class="contactImage" src='assets/img/facebook.png' />
                         </a>                        
                     </li>
                     <li class="contactReference">
                         <a href="https://www.linkedin.com/in/simone-rota-686158a4/">
-                            <img id="Linkedin" src='assets/img/linkeding.png' width='80'>
+                            <img class="contactImage" id="Linkedin" src='assets/img/linkeding.png'>
                         </a>    
                     </li>
                     <li class="contactReference">
                         <a href="https://github.com/SimoneRota83">
-                            <img id="GitHub" src="assets/img/gitHub.png" width='70'>
+                            <img class="contactImage" id="GitHub" src="assets/img/gitHub.png">
                         </a>
                     </li>
                 </ul>
             </div>
-        </footer>                                      
+        </footer>    
+        
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopBar");
+                if (x.className === "topbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topbar";
+                }
+            }
+        </script>
     </body>
 </html>
