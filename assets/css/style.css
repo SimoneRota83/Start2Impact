@@ -6,32 +6,45 @@
 }
 /* 1. General style of the document */
 
-body {
-  background-color: #045aa0;
+/*body {
+  background-color: white;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  color: #f0ebeb;
+  color: black;
   margin: 0;
+}*/
+
+body {
+  margin: 0;
+  font-family:  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
 }
 
 /* 2. Navigation on top of the document */
 .topbar{
+  float: none;
   overflow: hidden;
   background-color: black; 
-  position:fixed;
-  width: 100%;
-  
-  
+  position:absolute;
+  left: calc((100% - 780px) / 2);
+  width: 780px;
+  text-align:center;     
 }
 
 .topbar a {
   float: left;
   display:block;
   color: rgb(240, 235, 235);
-  text-align:center;
-  padding: 15px 30px ;
+  
+  padding: 15px;
   text-decoration: none;
   border-radius: 3px;
+  width:100px;
 }
 
 .topbar a:hover {
@@ -48,21 +61,33 @@ body {
 }
 
 @media screen and (max-width: 800px){
-  .topbar a:not(:first-child){display: none;}
-  .topbar a.icon{
+  .topbar{
+    width:100%;
+    left:0;
+  }
+  .topbar a:not(:first-child){
+    display: none;    
+  }
+  .topbar a.icon{   
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .topbar.responsive {position: relative;}
-  .topbar.responsive .icon {
+  .topbar.responsive {
     position: absolute;
+    width: 100%;
+    left:0;
+    top:0;
+  }
+  .topbar.responsive .icon {
+    position: absolute;    
     right: 0;
     top: 0;
   }
-  .topbar.responsive a {
+  .topbar.responsive a {   
+    width: 100%;
     float: none;
     display: block;
     text-align: left;
@@ -81,7 +106,15 @@ img.middle{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: fit-content;
   width: 40%;
+}
+
+img.imggif{
+  display:block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homeDocument,
@@ -98,12 +131,21 @@ img.middle{
   padding-bottom: 100px;
 }
 
+h1{
+  font-size: 30px;
+  font-family: "Papyrus",fantasy;
+  font-style: oblique;
+}
+
 h2{
-  padding: 20px;
+  padding: 10px;
+  font-family:"Papyrus",fantasy;
+  text-align: justify;
 }
 
 p{
   padding: 10px;
+  text-align: justify;
 }
 
 p a{
@@ -116,8 +158,8 @@ p a{
   overflow: hidden;
   position: fixed;
   bottom:0;
-  width: 100%;
-  
+  width: 700px;
+  left: calc((100% - 700px) / 2);
 }
 
 .contactReference{
@@ -128,7 +170,14 @@ p a{
   float: left;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
+  .contactDocument{    
+    width:460px;
+    left:calc((100% - 460px) / 2);
+  }
+  .contactReference{
+    padding:5px 2px ;
+  }
   .contact{
     background-color: white; 
     position: relative;
@@ -144,13 +193,4 @@ p a{
   
 img.contactImage{
   height: 30px;
-}
-
-/* Trasferte */
-img.middleTrasferte,
-img.middlePassioni{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
